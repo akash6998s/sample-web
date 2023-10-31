@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 
 
 const Footer = () => {
+
+const date = new Date().getFullYear()
+
   return (
     <div className='footer'>
       <footer className='bg-white'>
         <div className='mx-auto w-full'>
-          <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 mx-16 md:mx-2">
-            <div>
+          <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4  md:mx-2">
+            <div className='flex flex-col justify-center items-center'>
               <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Company</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li className='my-3 text-sm'><Link to="/">Home</Link></li>
@@ -18,8 +21,8 @@ const Footer = () => {
                 <li className='my-3 text-sm'><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Company</h2>
+            <div className='flex flex-col justify-center items-center'>
+              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Industries</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li className='my-3 text-sm'><Link to="/">Home</Link></li>
                 <li className='my-3 text-sm'><Link to="/about">About</Link></li>
@@ -28,8 +31,8 @@ const Footer = () => {
                 <li className='my-3 text-sm'><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Company</h2>
+            <div className='flex flex-col justify-center items-center'>
+              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Solutions</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li className='my-3 text-sm'><Link to="/">Home</Link></li>
                 <li className='my-3 text-sm'><Link to="/about">About</Link></li>
@@ -38,8 +41,8 @@ const Footer = () => {
                 <li className='my-3 text-sm'><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Company</h2>
+            <div className='flex flex-col justify-center items-center'>
+              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Products</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li className='my-3 text-sm'><Link to="/">Home</Link></li>
                 <li className='my-3 text-sm'><Link to="/about">About</Link></li>
@@ -48,8 +51,8 @@ const Footer = () => {
                 <li className='my-3 text-sm'><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
-            <div>
-              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Company</h2>
+            <div className='flex flex-col justify-center items-center'>
+              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Resources</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li className='my-3 text-sm'><Link to="/">Home</Link></li>
                 <li className='my-3 text-sm'><Link to="/about">About</Link></li>
@@ -58,7 +61,17 @@ const Footer = () => {
                 <li className='my-3 text-sm'><Link to="/contactus">Contact Us</Link></li>
               </ul>
             </div>
-            <div className="col-span-3">
+            <div className='flex flex-col justify-center items-center'>
+              <h2 class="mb-4 text-sm font-bold text-gray-700 uppercase dark:text-white">Contact Us</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                  <li className='my-3 text-sm'><Link to="/">Home</Link></li>
+                  <li className='my-3 text-sm'><Link to="/about">About</Link></li>
+                  <li className='my-3 text-sm'><Link to="/about">Blog</Link></li>
+                  <li className='my-3 text-sm'><Link to="/contactus">More</Link></li>
+                  <li className='my-3 text-sm'><Link to="/contactus">Contact Us</Link></li>
+                </ul>
+            </div>
+            <div className="col-span-2">
               <div className="col-span-2">
                 <iframe
                   title="Location Map"
@@ -74,10 +87,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className='px-6 md:px-2 mx-auto w-full flex justify-between'>
-          <div>a</div>
-          <div>a</div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div className='px-6 md:px-2 md:flex md:justify-between'>
+          <div className='md:col-span-12 col-span-6'>© Copyright {date} Tech Phoenix Pvt. Ltd. All Rights Reserved</div>
+          <div className='md:col-span-12 col-span-6'>aaaaaaaaaaaaaaaaaaaa</div>
         </div>
       </footer>
     </div>
